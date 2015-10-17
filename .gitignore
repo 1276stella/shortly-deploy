@@ -4,6 +4,10 @@
 azure.err
 iisnode.yml
 
+## Ignore build files
+public/dist/
+node_modules/
+
 # Icon must ends with two \r.
 Icon
 
