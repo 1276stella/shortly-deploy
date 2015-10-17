@@ -4,6 +4,16 @@ var util = require('./lib/utility');
 
 var handler = require('./lib/request-handler');
 
+var mongoose = require('mongoose');
+// var path = require('path');
+mongoose.connect('mongodb://localhost/shortly'); // connect to the database
+var db = mongoose.connection; // set up the connection
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function(){
+  console.log('db open!');                                            
+})
+
+
 var app = express();
 
 app.configure(function() {
