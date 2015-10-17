@@ -7,7 +7,6 @@ iisnode.yml
 ## Ignore build files
 public/dist/*
 node_modules/*
-mongo/*
 
 # Icon must ends with two \r.
 Icon
