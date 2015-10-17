@@ -6,7 +6,7 @@ var linkSchema = mongoose.Schema({
   base_url: {type: String, required: true},
   code: {type: String},
   title: {type: String},
-  visit: {type: String}
+  visits: {type: Number, default: 0}
 });
 
 linkSchema.pre('save', function(next){
